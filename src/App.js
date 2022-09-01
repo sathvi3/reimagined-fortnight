@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import AppRouter from './components/AppRouter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className='navbar'>
+        <li className='no-bullet'><a href='http://localhost:3000/gateway-onboarding'> Gateway </a></li>
+        <li className='no-bullet'><a href='http://localhost:3000/device-profile'> Device Profile </a></li>
+        <li className='no-bullet'><a href='http://localhost:3000/application'> Application </a></li>
+        <li className='no-bullet'><a href='http://localhost:3000/device-onboarding'> Device </a></li>
+      </nav>
+      <AppRouter />
     </div>
   );
 }
